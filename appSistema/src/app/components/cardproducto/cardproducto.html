@@ -1,0 +1,16 @@
+<h1 class="animated fadeIn">{{ producto.nombre }}</h1>
+<hr>
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    
+    <br><br> 
+    <a [routerLink]="['/productos']" class="btn btn-outline-danger btn-block">
+      Regresar
+    </a>
+  </div>
+  <div class="col-md-8">
+    <h3>Descripción</h3>
+    <hr>
+    <p>Precio: {{ producto.precio }}</p>
+  </div>
+</div>
