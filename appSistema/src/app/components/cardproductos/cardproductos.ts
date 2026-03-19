@@ -3,10 +3,11 @@ import { Router } from '@angular/router';
 import { Producto } from '../../models/producto.models';
 import { ProductosService } from '../../services/productos.service';
 import { CardproductoTarjeta } from "../cardproducto-tarjeta/cardproducto-tarjeta";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cardproductos',
-  imports: [CardproductoTarjeta],
+  imports: [CardproductoTarjeta, CommonModule],
   templateUrl: './cardproductos.html',
   styleUrls: ['./cardproductos.css'],
 })

@@ -13,5 +13,5 @@ export const routes: Routes = [
   { path: 'producto/:id', component: Cardproducto},
   { path: 'producto/tarjeta', component: CardproductoTarjeta},
   { path: 'buscar/:termino', component: Cardbuscador},
-  { path: '**', component: Inicio },
+  { path: '**', component: Cardproductos },
 ];

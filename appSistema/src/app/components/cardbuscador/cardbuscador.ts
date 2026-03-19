@@ -1,10 +1,12 @@
 import { Component,   OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductosService } from '../../services/productos.service';
+import { CardproductoTarjeta } from "../cardproducto-tarjeta/cardproducto-tarjeta";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cardbuscador',
-  imports: [],
+  imports: [CardproductoTarjeta, CommonModule],
   templateUrl: './cardbuscador.html',
   styleUrls: ['./cardbuscador.css'],
 })

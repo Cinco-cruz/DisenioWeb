@@ -9,18 +9,18 @@ import { Router } from '@angular/router';
 export class CardproductoTarjeta implements OnInit {
   @Input() producto: any = {};
   @Input() index: number = 0;
-  @Input() productoSeleccionado: EventEmitter<number>;
+  @Output() productoSeleccionado: EventEmitter<number>;
   constructor(private router: Router) {
     this.productoSeleccionado = new EventEmitter();
   }
   
-  ngOnInit() {
+  ngOnInit(): void {
 
   }
 
   verProducto() {
-    // console.log(this.index);
-    this.router.navigate(['/producto', this.index]);
+     console.log(this.index);
+    //this.router.navigate(['/producto', this.index]);
     // this.productoSeleccionado.emit(this.index);
   }
 }
