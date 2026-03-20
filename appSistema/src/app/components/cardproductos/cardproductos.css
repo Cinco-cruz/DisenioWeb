@@ -1,0 +1,47 @@
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #00d4ff, #243b55);
+  width: 60%;
+  margin: 10px auto 30px auto;
+}
+
+body, :host {
+  background: linear-gradient(90deg, #141e30, #243b55);
+  min-height: 100vh;
+}
+
+/* Contenedor de productos */
+.row {
+  padding: 10px;
+}
+
+/* Tarjetas */
+.col {
+  transition: transform 0.3s ease;
+}
+
+.col:hover {
+  transform: scale(1.03);
+}
+
+/* Si quieres forzar estilo a tu card */
+app-cardproducto-tarjeta {
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  background: #1c2b3a;
+  transition: 0.3s;
+}
+
+app-cardproducto-tarjeta:hover {
+  box-shadow: 0 10px 25px rgba(0,212,255,0.4);
+}

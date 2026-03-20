@@ -1,0 +1,8 @@
+.card {
+  background: #1c2b3a;
+  color: white;
+}
+.card-img-top {
+  height: 200px;      /* ajusta este valor */
+  object-fit: cover;  /* recorta sin deformar */
+}

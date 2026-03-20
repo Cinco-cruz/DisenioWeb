@@ -2,13 +2,11 @@
   <img class="card-img-top img-fluid" [src]="producto.img" [alt]="producto.nombre">
     <div class="card-body">
         <h4 class="card-title">{{ producto.nombre }}</h4>
-        <p class="card-text">{{ producto.precio }}</p>
+        <p class="card-text">{{ producto.precio }} bs</p>
         <p class="card-text"><small class="text-muted">{{ producto.descripcion }}</small></p>
 
         <button (click)="verProducto()" class="btn btn-primary btn-block">
           Ver mas...
         </button>
-        <!-- <a [routerLink]="['/productos', i]" 
-         class="btn btn-primary"> Ver mas link...</a> -->
       </div>
     </div>

@@ -6,9 +6,9 @@ export class ProductosService {
         console.log("Servicio de productos listo para usar!!!");
     }
     private productos : Producto[] = [
-        {nombre: 'Audifonos', img: 'img/Nike-Phantom.png', precio: 20},
-        {nombre: 'Tenis', img: 'img/Nike-Phantom.png', precio: 18},
-        {nombre: 'Rolej', img: 'img/rolej.png', precio: 15},
+        {nombre: 'Audifonos', img: 'img/audifonos.png', precio: 800},
+        {nombre: 'Tenis', img: 'img/Nike-Phantom.png', precio: 500},
+        {nombre: 'Roloj', img: 'img/reloj.png', precio: 1000},
     ];
     getProductos(): Producto[] {return this.productos;}
     getProducto(id: number) {return this.productos[id];}

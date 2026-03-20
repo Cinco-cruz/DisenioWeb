@@ -8,13 +8,7 @@ import { Router, RouterLink, RouterModule } from '@angular/router';
   templateUrl: './navbar.html',
   styleUrls: ['./navbar.css'],
 })
-export class Navbar implements OnInit {
-  constructor(private router: Router) { }
+export class Navbar {
 
-  ngOnInit(): void {
-  }
-  buscarProducto(terminos: string) {
-    //console.log(terminos);
-    this.router.navigateByUrl('/busqueda/' + terminos);
-  }
 }
+

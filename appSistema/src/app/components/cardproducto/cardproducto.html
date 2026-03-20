@@ -1,16 +1,21 @@
-<h1 class="animated fadeIn">{{ producto.nombre }}</h1>
+<h1 class="animated fadeIn text-center">{{ producto.nombre }}</h1>
 <hr>
-<div class="row animated fadeIn fast">
-  <div class="col-md-4">
-    <img [src]="producto.img" class="img-fluid" [alt]="producto.nombre">
+
+<div class="row animated fadeIn fast align-items-center">
+  
+  <div class="col-md-4 text-center">
+    <img [src]="producto.img" [alt]="producto.nombre">
     <br><br> 
-    <a [routerLink]="['/productos']" class="btn btn-outline-danger btn-block">
-      Regresar
+    <a [routerLink]="['/productos']" class="btn btn-outline-danger">
+       Regresar
     </a>
   </div>
+
   <div class="col-md-8">
-    <h3>Descripción</h3>
+    <h3>{{producto.nombre}}</h3>
     <hr>
-    <p>Precio: {{ producto.precio }}</p>
+    <p><strong>Precio:</strong> {{ producto.precio }} bs</p>
+    <p>{{ producto.descripcion }}</p>
   </div>
+
 </div>
